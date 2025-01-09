@@ -1,33 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<key>osVersionRequirements</key>
+<array>
 <dict>
-	<key>AssociatedBundleIdentifiers</key>
-	<array>
-		<string>com.github.macadmins.Nudge</string>
-	</array>
-	<key>Label</key>
-	<string>com.github.macadmins.Nudge.SMAppService</string>
-	<key>LimitLoadToSessionType</key>
-	<array>
-		<string>Aqua</string>
-	</array>
-	<key>ProgramArguments</key>
-	<array>
-		<string>/Applications/Utilities/Nudge.app/Contents/MacOS/Nudge</string>
-	</array>
-	<key>RunAtLoad</key>
-	<true/>
-	<key>StartCalendarInterval</key>
-	<array>
-		<dict>
-			<key>Minute</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>Minute</key>
-			<integer>30</integer>
-		</dict>
-	</array>
+    <key>aboutUpdateURL</key>
+    <string>https://support.apple.com/en-gb/HT201222</string>
+    <key>actionButtonPath</key>
+    <string>/System/Library/CoreServices/Software Update.app</string>
+    <key>majorUpgradeAppPath</key>
+    <string>/System/Library/CoreServices/Software Update.app</string>
+    <key>requiredInstallationDate</key>
+    <string>2024-05-21T09:00:00Z</string>
+    <key>requiredMinimumOSVersion</key>
+    <string>14.7.2</string>
+    <key>targetedOSVersionsRule</key>
+    <string>default</string>
+    <key>aboutUpdateURLs</key>
+    <array>
+	<dict>
+	    <key>_language</key>
+	    <string>en</string>
+	    <key>aboutUpdateURL</key>
+	    <string>https://support.apple.com/en-gb/HT201222</string>
+	</dict>
+    </array>
 </dict>
-</plist>
+</array>
+<key>optionalFeatures</key>
+<dict>
+<key>attemptToFetchMajorUpgrade</key>
+<false />
+<key>disableSoftwareUpdateWorkflow</key>
+<true />
+</dict>
+<key>userExperience</key>
+<dict>
+<key>allowGracePeriods</key>
+<false />
+<key>allowLaterDeferralButton</key>
+<true />
+<key>allowUserQuitDeferrals</key>
+<true />
+<key>allowedDeferrals</key>
+<integer>50</integer>
+<key>allowedDeferralsUntilForcedSecondaryQuitButton</key>
+<integer>14</integer>
+<key>approachingRefreshCycle</key>
+<integer>5400</integer>
+<key>approachingWindowTime</key>
+<integer>168</integer>
+<key>calendarDeferralUnit</key>
+<string>imminentWindowTime</string>
+<key>elapsedRefreshCycle</key>
+<integer>3600</integer>
+<key>gracePeriodInstallDelay</key>
+<integer>23</integer>
+<key>gracePeriodLaunchDelay</key>
+<integer>1</integer>
+<key>gracePeriodPath</key>
+<string>/private/var/db/.AppleSetupDone</string>
+<key>imminentRefreshCycle</key>
+<integer>1800</integer>
+<key>imminentWindowTime</key>
+<integer>8</integer>
+<key>initialRefreshCycle</key>
+<integer>1800</integer>
+<key>launchAgentIdentifier</key>
+<string>com.github.macadmins.Nudge</string>
+<key>loadLaunchAgent</key>
+<true />
+<key>maxRandomDelayInSeconds</key>
+<integer>900</integer>
+<key>noTimers</key>
+<false />
+<key>nudgeRefreshCycle</key>
+<integer>30</integer>
+<key>randomDelay</key>
+<false />
+</dict>
